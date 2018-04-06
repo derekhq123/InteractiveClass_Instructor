@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qnmd.ReplyActivity"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Reply to Questions"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@+id/reply"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/reply"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:hint="Enter Reply" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/DisplayButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/DisplayButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Back"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp"
+        android:text="Show All Questions" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:text="Go Back" />
+
+
+
+</RelativeLayout>

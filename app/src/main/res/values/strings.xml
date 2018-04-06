@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">For Instructor</string>
+    <string name="main_home">Forum</string>
+    <string name="main_news">FB</string>
+    <string name="main_quiz">Quiz</string>
+    <string name="main_ques">Ques</string>
+    <string name="main_set">Sett
+
+    </string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+</resources>

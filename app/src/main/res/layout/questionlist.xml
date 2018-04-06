@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/questionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="enter point"
+        android:layout_below="@+id/questionTitle"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+
+    <Spinner
+        android:id="@+id/questiontype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/selections"
+        android:layout_below="@id/point"/>
+
+    <EditText
+        android:id="@+id/questionContent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/questiontype"
+        android:hint="Question content"/>
+
+
+
+    <TextView
+        android:id="@+id/A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="A"
+        android:visibility="gone"
+        android:layout_below="@id/questionContent"
+        android:layout_marginTop="17dp"
+        />
+    <EditText
+        android:id="@+id/Acontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_below="@id/questionContent"
+        android:layout_toRightOf="@id/A"
+        />
+
+    <TextView
+        android:id="@+id/B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="B"
+        android:visibility="gone"
+        android:layout_below="@id/A"
+        android:layout_marginTop="17dp"
+        />
+    <EditText
+        android:id="@+id/Bcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_below="@id/Acontent"
+        android:layout_toRightOf="@id/B"
+        />
+
+    <TextView
+        android:id="@+id/C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="C"
+        android:visibility="gone"
+        android:layout_below="@id/B"
+        android:layout_marginTop="17dp"
+        />
+    <EditText
+        android:id="@+id/Ccontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_below="@id/Bcontent"
+        android:layout_toRightOf="@id/C"
+        />
+
+    <TextView
+        android:id="@+id/D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="D"
+        android:visibility="gone"
+        android:layout_below="@id/C"
+        android:layout_marginTop="17dp"
+        />
+    <EditText
+        android:id="@+id/Dcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_below="@id/Ccontent"
+        android:layout_toRightOf="@id/D"
+        />
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@id/Dcontent"/>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/answer"/>
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/answer"/>
+</RelativeLayout>
